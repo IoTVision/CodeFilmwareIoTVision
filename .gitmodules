@@ -1,0 +1,3 @@
+[submodule "WiFi_Manager"]
+	path = WiFi_Manager
+	url = https://github.com/tonyp7/esp32-wifi-manager.git
