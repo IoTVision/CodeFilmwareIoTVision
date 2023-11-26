@@ -43,7 +43,7 @@ extern "C"
 extern wifi_event_t _WifiStatus;
 extern ip_event_t _IPStatus;
 
-#define DEFAULT_AP_SSID "ESP32-LoRaWan"
+#define DEFAULT_AP_SSID "ESP32-LoRa"
 #define DEFAULT_AP_PASSWORD "12345678"
 #define DEFAULT_AP_IP CONFIG_DEFAULT_AP_IP
 #define DEFAULT_AP_GATEWAY CONFIG_DEFAULT_AP_GATEWAY

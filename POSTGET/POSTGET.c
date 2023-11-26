@@ -157,16 +157,16 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
     return err;
 
 free_output_buffer:
-{
-    if (!output_buffer)
     {
-        ESP_LOGD(TAG, "free output_buffer");
-        free(output_buffer);
-        output_buffer = NULL;
+        if (!output_buffer)
+        {
+            ESP_LOGD(TAG, "free output_buffer");
+            free(output_buffer);
+            output_buffer = NULL;
+        }
+        output_len = 0;
+        return err;
     }
-    output_len = 0;
-    return err;
-}
 }
 
 http_status_t http_get(char *url, char *response)
